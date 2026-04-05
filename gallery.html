@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Valley Nursery – Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Client1_AloePlant.png" alt="Bloom Valley Nursery logo">
+            <h1>Bloom Valley Nursery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="tips.html">Gardening Tips</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </header>
+
+    <main>
+        <h1>Our Plants & Products</h1>
+        <table class="gallery-table">
+            <caption>Product gallery with Add to Cart buttons</caption>
+            <tr>
+                <td><img src="images/Client1_AppleTree.png" alt="Apple tree"><br>Apple Tree<br><button class="add-to-cart" data-name="Apple Tree" data-price="35">Add to Cart</button></td
+                <td><img src="images/Client1_BirchTree.png" alt="Birch tree"><br>Birch Tree<br><button class="add-to-cart" data-name="Birch Tree" data-price="40">Add to Cart</button></td
+                <td><img src="images/Client1_MapleTree.png" alt="Maple tree"><br>Maple Tree<br><button class="add-to-cart" data-name="Maple Tree" data-price="50">Add to Cart</button></td
+            </tr>
+            <tr>
+                <td><img src="images/Client1_AloePlant.png" alt="Aloe vera"><br>Aloe Vera<br><button class="add-to-cart" data-name="Aloe Vera" data-price="12">Add to Cart</button></td
+                <td><img src="images/Client1_SpiderPlant.png" alt="Spider plant"><br>Spider Plant<br><button class="add-to-cart" data-name="Spider Plant" data-price="10">Add to Cart</button></td
+                <td><img src="images/Client1_StringofPearls.png" alt="String of pearls"><br>String of Pearls<br><button class="add-to-cart" data-name="String of Pearls" data-price="18">Add to Cart</button></td
+            </tr>
+            <tr>
+                <td><img src="images/Client1_Birdhouse.png" alt="Birdhouse"><br>Birdhouse<br><button class="add-to-cart" data-name="Birdhouse" data-price="22">Add to Cart</button></td
+                <td><img src="images/Client1_PottingSoil.png" alt="Potting soil"><br>Potting Soil<br><button class="add-to-cart" data-name="Potting Soil" data-price="8">Add to Cart</button></td
+                <td><img src="images/Client1_WateringCan.png" alt="Watering can"><br>Watering Can<br><button class="add-to-cart" data-name="Watering Can" data-price="14">Add to Cart</button></td
+            </tr>
+        </table>
+        <div class="cart-placeholder-buttons">
+            <button id="clear-cart">Clear Cart</button>
+            <button id="process-order">Process Order</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-col"><h4>Hours</h4><p>Mon‑Fri 9‑6, Sat‑Sun 10‑5</p></div>
+        <div class="footer-col"><h4>Contact</h4><p>123 Garden Lane, (555) 123‑4567</p></div>
+        <div class="footer-col"><h4>Social</h4><p>FB | IG | Twitter</p></div>
+        <div class="footer-col"><h4>Subscribe</h4><button id="subscribe-footer">Subscribe</button></div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p><strong>Total: $<span id="cart-total">0</span></strong></p>
+            <button id="clear-cart-modal">Clear Cart</button>
+            <button id="process-order-modal">Process Order</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

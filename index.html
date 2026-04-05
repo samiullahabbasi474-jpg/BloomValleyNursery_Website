@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Valley Nursery – Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Client1_AloePlant.png" alt="Bloom Valley Nursery logo">
+            <h1>Bloom Valley Nursery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="tips.html">Gardening Tips</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Fresh Plants Delivered to Your Door</h1>
+            <button class="cta-button" onclick="location.href='gallery.html'">Shop Now</button>
+        </section>
+        <section class="featured">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/Client1_AloePlant.png" alt="Indoor plants">
+                    <h3>Indoor Plants</h3>
+                    <button class="add-to-cart" data-name="Indoor Plants" data-price="25">Add to Cart – $25</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Client1_AppleTree.png" alt="Outdoor trees">
+                    <h3>Outdoor Trees</h3>
+                    <button class="add-to-cart" data-name="Outdoor Trees" data-price="45">Add to Cart – $45</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Client1_BirchTree.png" alt="Gardening tools">
+                    <h3>Gardening Tools</h3>
+                    <button class="add-to-cart" data-name="Gardening Tools" data-price="15">Add to Cart – $15</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <h4>Hours</h4>
+            <p>Mon–Fri: 9am – 6pm<br>Sat–Sun: 10am – 5pm</p>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>123 Garden Lane, Bloom Valley<br>Phone: (555) 123‑4567</p>
+        </div>
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <p>Facebook | Instagram | Twitter</p>
+        </div>
+        <div class="footer-col">
+            <h4>Subscribe</h4>
+            <button id="subscribe-footer">Subscribe for Updates</button>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p><strong>Total: $<span id="cart-total">0</span></strong></p>
+            <button id="clear-cart-modal">Clear Cart</button>
+            <button id="process-order-modal">Process Order</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

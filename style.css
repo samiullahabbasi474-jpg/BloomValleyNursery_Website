@@ -1,0 +1,353 @@
+/* Bloom Valley Nursery - Main Stylesheet */
+/* Color Palette 2: Canopy Green #014038, Meadow Mist #96BAA0, Sky Bloom #BDD4DA, Sunlit Petal #F0C06D, Cloudy Gray #F7F7F7 */
+/* Font Color: Detritus Green #00231C */
+/* Typography Option 2: Arial (titles), Calibri (body), Comfortaa (subtitles) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Calibri', Arial, sans-serif;
+    background-color: #F7F7F7;
+    color: #00231C;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #014038;
+    color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.logo h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #F7F7F7;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    padding: 0.5rem;
+    transition: background 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #96BAA0;
+    border-radius: 4px;
+    outline: none;
+}
+
+.cart-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: #F0C06D;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    color: #00231C;
+}
+
+.hero {
+    background-color: #BDD4DA;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 1rem 0;
+}
+
+.hero h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00231C;
+}
+
+.cta-button {
+    background-color: #F0C06D;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #00231C;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #96BAA0;
+}
+
+.featured, .gallery-container, .about-container, .tips-container {
+    padding: 2rem 5%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.product-card, .gallery-item {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #BDD4DA;
+}
+
+.product-card img, .gallery-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.add-to-cart {
+    background-color: #F0C06D;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #00231C;
+}
+
+.add-to-cart:hover {
+    background-color: #96BAA0;
+}
+
+.gallery-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: #F7F7F7;
+}
+
+.gallery-table td {
+    border: 1px solid #BDD4DA;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+.cart-placeholder-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.cart-placeholder-buttons button {
+    background-color: #F0C06D;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.cart-placeholder-buttons button:hover {
+    background-color: #96BAA0;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.about-text, .contact-form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #BDD4DA;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #96BAA0;
+    border-radius: 4px;
+    font-family: 'Calibri', Arial, sans-serif;
+}
+
+.contact-form button {
+    background-color: #F0C06D;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.map-placeholder {
+    background: #E0E0E0;
+    height: 200px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #014038;
+    border-radius: 8px;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.tips-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tips-list li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.tips-list li::before {
+    content: "🌱";
+    position: absolute;
+    left: 0;
+    color: #014038;
+}
+
+.newsletter {
+    background-color: #96BAA0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    background-color: #014038;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #014038;
+    color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    margin-top: 2rem;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 150px;
+    margin: 0.5rem 0;
+}
+
+.footer-col h4 {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.footer-col button {
+    background-color: #F0C06D;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+    .product-grid, .about-container, .tips-container {
+        grid-template-columns: 1fr;
+    }
+    .gallery-table {
+        display: block;
+        overflow-x: auto;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+}
